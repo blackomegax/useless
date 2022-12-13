@@ -1,0 +1,44 @@
+#!/bin/bash
+
+# intended solely for the purpose of demonstrating how to create a poorly chained bash script.
+
+# Define a function that does nothing
+function do_nothing {
+  # Do absolutely nothing
+  true
+}
+
+# Define a function that prints a message
+function print_message {
+  # Print a message
+  echo "This is a message from the script"
+}
+
+# Define a function that reads from the keyboard
+function read_input {
+  # Read a line of input from the keyboard
+  read -p "Enter some input: " input
+  # Print the input
+  echo "You entered: $input"
+}
+
+# Define a function that loops forever
+function loop_forever {
+  # Loop forever
+  while true; do
+    # Do nothing
+    true
+  done
+}
+
+# Call the do_nothing function
+do_nothing
+
+# Call the print_message function
+print_message
+
+# Call the read_input function
+read_input
+
+# Call the loop_forever function
+loop_forever
